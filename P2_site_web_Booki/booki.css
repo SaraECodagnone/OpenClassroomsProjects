@@ -1,0 +1,144 @@
+main{
+    width:auto;
+}
+#titre_principal{
+    display:flex;
+  
+}
+header{
+    display:flex;
+    align-content: flex-end;
+   
+}
+#logo_booki{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex:3;
+   
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration-line: none;
+  
+}
+/*navigation*/
+nav ul{
+    display:flex;
+  }
+
+nav li {
+   
+    margin-right: 15px;
+}
+nav a{ 
+    padding-top: 12px;
+    color:black;
+}
+nav a:hover{ 
+        border-top: 1px solid #0065fc;
+        color:#0065fc;
+}
+section{
+    display:flex;
+    }
+article{
+    flex:2;
+    display:flex;
+    background-color: #f2f2f2;
+    border-radius:10px;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+#photo1 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+    margin:0px;
+}
+
+#photo2 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#photo3 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}#photo4 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#photo5 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#photo6 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#photopop1 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+
+#photopop2 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#photopop3 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+
+#activite1 img{
+    width:240px;
+    height:480px;
+    border-radius:10px;
+}
+#activite2 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#activite3 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#activite4 img{
+    width:240px;
+    height:480px;
+    border-radius:10px;
+}
+#activite5 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+#activite6 img{
+    width:240px;
+    height:240px;
+    border-radius:10px;
+}
+aside{
+    flex:1.2;
+    background-color: #f2f2f2;
+    padding:10px;
+    border-radius:10px;
+    position:relative;
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+  }
