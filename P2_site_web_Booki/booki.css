@@ -1,5 +1,6 @@
 main{
     width:auto;
+    box-sizing: content-box;
 }
 #titre_principal{
     display:flex;
@@ -42,15 +43,21 @@ nav a:hover{
         color:#0065fc;
 }
 section{
-    display:flex;
-    }
+display:flex;
+}
 article{
-    flex:2;
+    flex:3;
+       background-color: #f2f2f2;
+    align-content: space-between;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+.horizontelle{
+display:flex;
+}
+.verticale{
     display:flex;
-    background-color: #f2f2f2;
-    border-radius:10px;
-     flex-wrap: wrap;
-     justify-content: space-between;
+    flex-direction: column;
 }
 #photo1 img{
     width:240px;
@@ -99,39 +106,53 @@ article{
     height:240px;
     border-radius:10px;
 }
-
+.activites{
+    display:flex;
+       background-color: #f2f2f2;
+}
+.section_activites{
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    border-radius: 10px;
+}
 #activite1 img{
     width:240px;
-    height:480px;
+    height:380px;
     border-radius:10px;
+    margin: 10px 10px 10px 10px ;
 }
 #activite2 img{
     width:240px;
-    height:240px;
+    height:190px;
     border-radius:10px;
+    margin: 15px 15px 15px 15px;
 }
 #activite3 img{
     width:240px;
-    height:240px;
+    height:225px;
     border-radius:10px;
+    margin: 15px 15px 15px 15px;
 }
 #activite4 img{
     width:240px;
-    height:480px;
+    height:380px;
     border-radius:10px;
+    margin: 30px 30px 30px 30px;
 }
 #activite5 img{
     width:240px;
-    height:240px;
+    height:190px;
     border-radius:10px;
+    margin: 15px 15px 15px 15px;
 }
 #activite6 img{
     width:240px;
-    height:240px;
+    height:190px;
     border-radius:10px;
+    margin: 15px 15px 15px 15px;
 }
 aside{
-    flex:1.2;
+    flex:1.6;
     background-color: #f2f2f2;
     padding:10px;
     border-radius:10px;
