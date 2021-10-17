@@ -27,7 +27,7 @@
                         <p>
                         <label for="search"></label>
                         <input type="search" name="search" id="search" >
-                        <input type="submit" name="bouton" value="Rechercher">
+                        <input type="submit" name="bouton" id="form-submit-bouton"value="Rechercher">
                         </p>
                         </form>
                       </div>
@@ -40,12 +40,12 @@
                   
                       <div id="photo1">
                       <img src="image/photo1.jpg" alt="Auberge La Cannebiére" />
-                      <h3>"Auberge La Cannebiére"</h3>
+                      <h3>Auberge La Cannebiére</h3>
                       <h4>Nuit à partir de 25€</h4>
                     </div>
                     <div id="photo2">
                       <img src="image/photo2.jpg" alt="Hotel du Port" /> 
-                      <h3>"Hotel du Port"</h3>
+                      <h3>Hotel du Port</h3>
                       <h4>Nuit à partir de 52€</h4>
                     </div>
                     <div id="photo3">
@@ -57,17 +57,17 @@
                     <div class="horizontelle">
                        <div id="photo4">
                         <img src="image/photo4.jpg" alt="Hotel de la mer" />
-                         <h3>"Hotel de la mer</h3>
+                         <h3>Hotel de la mer</h3>
                           <h4>Nuit à partir de 46€</h4>
                      </div>
                      <div id="photo5">
                        <img src="image/photo5.jpg" alt="Auberge Le Panier" /> 
-                       <h3>"Auberge Le Panier"</h3>
+                       <h3>Auberge Le Panier</h3>
                        <h4>Nuit à partir de 23€</h4>  
                       </div>
                       <div id="photo6">
                         <img src="image/photo6.jpg" alt="Hotel chez Amina" />
-                        <h3>"Hotel chez Amina"</h3>
+                        <h3>Hotel chez Amina</h3>
                        <h4>Nuit à partir de 96€</h4>
                      </div>
                      </div>
@@ -78,18 +78,21 @@
                    <h1 id="titre_aside">Les plus populaires</h1>
                   </div>
                    <div id="photopop1">
-                   <img src="image/photopop1.jpg" alt="Hotel Le Soleil du Matin" />  
-                   <h3>"Hotel Le Soleil du Matin"</h3>
+                    
+                   <img src="image/photopop1.jpg" class="imageflottante" alt="Hotel Le Soleil du Matin" />  
+                   
+                      <h3>Hotel Le Soleil du Matin</h3>
                       <h4>Nuit à partir de 128€</h4>
+                     
                 </div>
                 <div id="photopop2">
-                   <img src="image/photopop2.jpg" alt="Au coeur de l'eau" />
-                   <h3>"Au coeur de l'eau"</h3>
+                   <img src="image/photopop2.jpg" class="imageflottante" alt="Au coeur de l'eau" />
+                   <h3>Au coeur de l'eau</h3>
                       <h4>Nuit à partir de 75€</h4>
                 </div>
                 <div id="photopop3">
-                   <img src="image/photopop3.jpg" alt="Hotel Tout bleu et Blanc" /> 
-                   <h3>"Hotel Tout bleu et Blanc"</h3>
+                   <img src="image/photopop3.jpg" class="imageflottante" alt="Hotel Tout bleu et Blanc" /> 
+                   <h3>Hotel Tout bleu et Blanc</h3>
                       <h4>Nuit à partir de 68€</h4>
                 </div>
                </aside>
@@ -97,41 +100,67 @@
             </section>
             
             
-               <section id="activites">
+               <section id="sec_activites">
                  <div class="section_activites">
+                    
                  <div class="titre_activites"><h1 id="titre_activites">Activités à Marseille</h1> </div>
-                 <div class="activites">
+
+                 <div class="div_activites">
                     
                     <div class="horizontelle">
                               <div id="activite1">
-                                 <img src="image/activite1.jpg" alt="Vieux Port" /> 
-                                  <h4>Vieux Port</h4>
+                                 <figure>
+                                 <img src="image/activite1.jpg" alt="Vieux Port" title="Vieux Port" /> 
+                                 <figcaption>
+                                 <h4> Vieux Port</h4>
+                              </figcaption>
+                              </figure>
                                </div>
                     </div>
                     <div class="verticale">
                         <div id="activite2">
-                            <img src="image/activite2.jpg" alt="Fort de Pomègues" /> 
+                           <figure>
+                            <img src="image/activite2.jpg" alt="Fort de Pomègues" title="Fort de Pomègues" /> 
+                            <figcaption>
                             <h4>Fort de Pomègues</h4>
+                            </figcaption>
+                           </figure>
                         </div>
                         <div id="activite3">
-                            <img src="image/activite3.jpg" alt="Îles des Frioult" /> 
+                           <figure>
+                            <img src="image/activite3.jpg" alt="Îles des Frioult" title="Îles des Frioult" /> 
+                            <figcaption>
                            <h4>Îles des Frioult</h4>
+                           </figcaption>
+                        </figure>
                         </div>
                         </div>
                          <div class="horizontelle">
                            <div id="activite4">
-                            <img src="image/activite4.jpg" alt="Park National des Calanques" /> 
+                              <figure>
+                            <img src="image/activite4.jpg" alt="Park National des Calanques" title="Park National des Calanques" /> 
+                            <figcaption>
                             <h4>Park National des Calanques</h4>
+                           </figcaption>
+                           </figure>
                             </div>
                           </div>
                        <div class="verticale">
                                  <div id="activite5">
-                                     <img src="image/activite5.jpg" alt="Notre-Dame-de-la-Guarde" /> 
+                                    <figure>
+                                     <img src="image/activite5.jpg" alt="Notre-Dame-de-la-Guarde"  title="Notre-Dame-de-la-Guarde"/> 
+                                     <figcaption>
                                      <h4>Notre-Dame-de-la-Guarde</h4>
+                                    </figcaption>
+                                    </figure>
                                 </div>
                                 <div id="activite6">
-                                     <img src="image/activite6.jpg" alt="Parc Longchamp" /> 
+                                   <figure>
+                                     <img src="image/activite6.jpg" alt="Parc Longchamp" title="Parc Longchamp"/> 
+                                     <figcaption>
                                      <h4>Parc Longchamp</h4>
+                                    </figcaption>
+                                    </figure>
                                 </div>
                           </div>
                         </div>
@@ -139,23 +168,26 @@
         </section>
      <footer>
        <div id="a_propos">
-               <h1>A propos</h1>
+              
                         <ul>
+                            <h4>A propos</h4>
                              <li ><a href="#">Fonctionnement du site</a></li>
                              <li><a href="#">Conditions generales de vente</a></li>
                              <li><a href="#">Données et confidentialité</a></li>
                         </ul>
       </div>  
       <div id="noshebergement">
-                <h1>Nos hébergements</h1>
+                
                      <ul>
+                        <h4>Nos hébergements</h4>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Soumettre votre hotel</a></li>
                     </ul>
       </div>
       <div id="asistance">
-                 <h1>Assistance</h1>
+                 
                       <ul>
+                         <h4>Assistance</h4>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
