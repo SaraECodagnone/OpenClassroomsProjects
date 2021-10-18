@@ -1,0 +1,150 @@
+main{
+    width:auto;
+    box-sizing: content-box;
+}
+
+
+
+#logo_booki{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex:3;
+   
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration-line: none;
+  
+}
+/*navigation*/
+nav ul{
+    display:flex;
+  }
+
+nav li {
+   
+    margin-right: 15px;
+}
+nav a{ 
+    padding-top: 12px;
+    color:black;
+}
+nav a:hover{ 
+        border-top: 1px solid #0065fc;
+        color:#0065fc;
+}
+/*Research*/
+#form-submit-bouton{
+background-color:#0065fc;
+}
+#photo img{
+    width:140px;
+    height:180px;
+    border-radius:10px;
+   }
+#photo{
+    text-align: center;
+}
+
+/* Les plus populaire*/
+.imageflottante{
+    float:left;
+}
+section{
+    display:flex;
+    flex-wrap:wrap;
+  }
+article{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+   
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+      }
+
+
+#photopop img{
+    width:140px;
+    height:140px;
+    border-radius:10px;
+}
+/*les activites à Marseille*/
+#activite1 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+}
+#activite2 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+   }
+#activite3 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+  }
+#activite4 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+   }
+#activite5 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+  }
+#activite6 img{
+    width:180px;
+    height:300px;
+    border-radius:10px;
+ }
+ 
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  footer a{ 
+       color:black;
+}
+footer ul{ 
+    text-align: left;
+}
+/*screen smartphone*/
+/*
+@media screen and (max-width: 768px)
+{ 
+    main{
+         background-color: blue;
+        width: auto;
+    }
+#populaire
+{display:none;
+}
+
+
+} */
+/*screen ordinateur et tablet*/ 
+/*
+@media screen and (max-width: 992px &mind-width:768px)
+{
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    background-color: pink;
+}*/
+header
+{
+   
+}
