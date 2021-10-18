@@ -105,10 +105,12 @@ section{
 #ligne1{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #ligne2{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 aside{
     display:flex;
