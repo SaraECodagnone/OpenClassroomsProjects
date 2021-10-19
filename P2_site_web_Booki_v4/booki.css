@@ -224,6 +224,9 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     width:100%;
+   background-color: #f2f2f2;
+    border-radius: 10px;
+    margin:2px;
   }
   footer a{ 
        color:black;
