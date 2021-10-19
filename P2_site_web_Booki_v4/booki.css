@@ -1,5 +1,5 @@
 body{
-    width:992px;
+    width:auto;
     display:flex;
     flex-direction: column;
 flex-wrap: wrap;
@@ -19,7 +19,7 @@ header{
 #titre_hebergement{
     display:flex;
     flex-wrap: wrap;
-    width:644px;
+    width:100%;
 }
 #logo_booki{
     margin-left: 0px;
@@ -176,7 +176,7 @@ section{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
-      width:65%;
+      width:70%;
       background-color: #f2f2f2;
       border-radius: 40px;
 }
