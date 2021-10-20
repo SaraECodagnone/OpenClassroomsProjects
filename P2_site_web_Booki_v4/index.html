@@ -2,19 +2,20 @@
 <html>
     <head>
      <meta charset="utf-8" />
-        <link rel="stylesheet" href="booki.css" media="screen"/>
-        <title>Booki V4</title>
+      <link rel="stylesheet" href="booki.css" media="screen"/>  
+<link rel="stylesheet" href="font_awesome_free_web/css/all.css">
+          <title>Booki V4</title>
     </head>
     <body>
       
               <header>
-              <div id="titre_principal"> </div>
+              <div id="titre_principal"> 
                     <div id="logo_booki"><img src="booki.png" alt="logo_booki" />  </div>
-                    <div id="div_nav">
+                    
                     <nav>
                            <ul>
-                             <li> <a href="#hebergement">Hébergements</a></li>
-                             <li><a href="#article_activites">Activités</a></li>
+                             <li> <a href="#section_hebergement">Hébergements</a></li>
+                             <li><a href="#section_activites">Activités</a></li>
                            </ul>
                       </nav>
                  
@@ -30,56 +31,73 @@
                    <div class="search">
                         <form method="post" action="traitement.php"> 
                         <label for="search"></label>
+                        <i class="fa fa-map-marker-alt" style="color:#0065FC"></i>
                         <input type="search" name="search" id="search" >
                         <input type="submit" name="bouton" id="form-submit-bouton"value="Rechercher"/>
                         </form>
-                     </div>
-                    <div id="filtres">filtres
-                      <div>economique</div>
-                      <div>familial</div>
-                      <div>romantique</div>
-                      <div>animaux autorisés</div>
+                     </div> 
+                     <div id="filtres">Filtres
+                      
+                      <div id="economique">
+                          <div id="photo_money"><a href="#" ><i class="fa fa-money-bill-wave" style="color:#0065FC" alt="Economique" > </i></a></div>
+                        <div id="titre_economique"><P><em>Economique</em></p></div>
+                       </div>
+                      <div id="familial">
+                        <div id="photo_child"><a href="#"><i class="fa fa-child" style="color:#0065FC" alt="Familial"></i> </a></div>
+                        <div id="titre_familial"><P><em>Familial</em></p></div>
+                       </div>
+                      <div id="romantique">
+                         <div id="photo_heart"><a href="#"> <i class="fa fa-heart" style="color:#0065FC" alt="Romantique"></i>  </a></div>
+                          <div id="titre_romantique"><P><em>Romantique</em></p></div>
+                       </div>
+                      <div id="animaux_autorises">
+                        <div id="photo_dog"><a href="#" > <i class="fa fa-dog" style="color:#0065FC" alt="Animaux autorisés"></i>  </a></div>
+                       <div id="titre_animaux_autorises"><P><em>Animaux autorisés</em></p></div>
+                    </div>
+                    
                     </div>
                     <div id="info"> plus de 500 logements sont disponibles dans centre ville</div>
            </section>
       <main id="bloc_pag">                
-            <section id="hebergement">
+            <section id="section_hebergement">
       <div id="div_hebergement"> 
        <div id="titre_hebergement"><h2 id="titre_hebergement">Hebergement à Marseille</h2></div>
           <div id="column1">  
              <!--Hotel 1 -->        
                  <div id="hotel">
                   <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo1.jpg"  alt="Auberge La Cannebiére" /> </a></div>
-                   <div id="prix_hotel"><P><em>Auberge La Cannebiére</em><br /> Nuit à partir de 25€</p></div>
+                   <div id="prix_hotel"><P><em>Auberge La Cannebiére</em><br /> Nuit à partir de 25<em>€</em></p></div>
                    </div>  
               <!--hotel 2-->
                   <div id="hotel">
-                  <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo2.jpg" alt="Hotel du Port" /></a></div>
-                  <div id="prix_hotel"><p><em>Hotel du Port</em><br />Nuit à partir de 52€</p></div> 
+                  <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo2.jpg"alt="Hotel de la mer"  /></a></div>
+                      <div id="prix_hotel"><p> <em> Hotel de la mer</em><br />Nuit à partir de 46<em>€</em></p></div>
+
                   </div>
           </div>
           <div id="column2"><!--Column 2-->
                   <!--Hotel3-->
                   <div id="hotel">
-                   <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo3.jpg"  alt="Hotel Les mouettes" /></a></div> 
-                    <div id=prix_hotel><P><em>Hotel Les mouettes</em><br /> Nuit à partir de 75€</p> </div> 
+                   <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo3.jpg" alt="Hotel du Port"  /></a></div> 
+                     <div id="prix_hotel"><p><em>Hotel du Port</em><br />Nuit à partir de 52<em>€</em></p></div> 
+                     
                   </div>
                <!--Hotel4-->
                     <div id="hotel">
-                       <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo4.jpg" alt="Hotel de la mer" /></a></div>
-                        <div id="prix_hotel"><p> <em> Hotel de la mer</em><br />Nuit à partir de 46€</p></div>
+                       <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo4.jpg" alt="Auberge Le Panier"  /></a></div>
+                    <div id="prix_hotel"><p> <em> Auberge Le Panier</em><br />Nuit à partir de 23<em>€</em></p></div>
                      </div>
           </div><!--fin column 2-->   
           <div id="column3"> <!--Column3= Hotel 5 et Hotel 6--> 
                        <!--hotel 5-->  
                    <div id="hotel">
-                     <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo5.jpg"  alt="Auberge Le Panier" /></a></div>
-                       <div id="prix_hotel"><p> <em> Auberge Le Panier</em><br />Nuit à partir de 23€</p></div>
+                     <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo5.jpg" alt="Hotel Les mouettes" /></a></div>
+                       <div id=prix_hotel><P><em>Hotel Les mouettes</em><br /> Nuit à partir de 75<em>€</em></p> </div> 
                     </div>
                     <!--Hotel 6-->
                   <div id="hotel">
                     <div id="nom_hotel"><a href="#" id="photo"><img src="image/photo6.jpg"   alt="Hotel chez Amina" /></a></div>
-                   <div id="prix_hotel"><p><em> Hotel chez Amina</em><br />Nuit à partir de 96€</p></div>
+                   <div id="prix_hotel"><p><em> Hotel chez Amina</em><br />Nuit à partir de 96<em>€</em></p></div>
                   </div> 
            </div>  <!--fin column 3-->
         </div>   <!--fin div hebergement-->           
@@ -87,15 +105,15 @@
                   <header><h1 id="titre_populaire">Les plus populaires</h1></header>
           <div id="div_pop1">
                   <div><a href="#" id="photopop"><img src="image/photopop1.jpg" class="imageflottante" alt="Hotel Le Soleil du Matin" /> </a></div> 
-                  <div><p><em>Hotel Le Soleil du Matin </em></p><p>Nuit à partir de 128€</p></div>
+                  <div><p><em>Hotel Le Soleil du Matin </em></p><p>Nuit à partir de 128<em>€</em></p></div>
           </div>
          <div id="div_pop2">
                  <div><a href="#" id="photopop"><img src="image/photopop2.jpg" class="imageflottante" alt="Au coeur de l'eau" /> </a></div>
-                  <div><p><em>Au coeur de l'eau</em></p><p>Chambre d'hôtes</p><p>Nuit à partir de 75€</p></div>
+                  <div><p><em>Au coeur de l'eau</em></p><p>Chambre d'hôtes</p><p>Nuit à partir de 75<em>€</em></p></div>
          </div>
          <div id="div_pop3">
                  <div><a href="#" id="photopop"><img src="image/photopop3.jpg" class="imageflottante" alt="Hotel Tout bleu et Blanc" /> </a></div>
-                 <div><p><em>Hotel Tout bleu et Blanc</em></p><p>Nuit à partir de 68€</p></div>
+                 <div><p><em>Hotel Tout bleu et Blanc</em></p><p>Nuit à partir de 68<em>€</em></p></div>
          </div>
         </div>
       </section>
