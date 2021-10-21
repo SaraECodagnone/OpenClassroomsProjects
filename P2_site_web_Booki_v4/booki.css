@@ -14,6 +14,7 @@ header{
 #titre_principal{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
 }
 #titre_hebergement{
@@ -64,6 +65,8 @@ background-color:#0065fc;
 #filtres{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65%;
     margin: 10px 10px 10px 10px;  
 }
 #titre_filtres{
@@ -108,14 +111,14 @@ background-color:#0065fc;
 #section_hebergement{
     display:flex;
     flex-wrap:wrap;
-      margin:10px;
+    padding:10px ;
 }
 #photo img{
-    width:200px;
+    width:240px;
     height:80px;
    /* border-radius:40px;*/
-   border-top-left-radius: 30px;
-   border-top-right-radius: 30px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
    }
 #hotel{
     background-color:white;
@@ -126,17 +129,18 @@ background-color:#0065fc;
    }
 /*Les populaires*/
 #photopop img{
-    width:140px;
-    height:80px;
+    width:100px;
+    height:100px;
     /* border-radius:40px;*/
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 #div_pop1, #div_pop2, #div_pop3 {
     background-color: white;
     box-shadow: 2px 2px 2px rgb(185, 183, 183);
     border-radius: 10px;
-    margin:2px;
+    margin:12px;
+    padding: 10px;
    }
 /*les activites à Marseille*/
 #activite1 img, #activite4 img{
@@ -148,8 +152,8 @@ background-color:#0065fc;
   
 }
 #activite2 img, #activite3 img, #activite5 img, #activite6 img{
-    width:140px;
-    height:80px;
+    width:240px;
+    height:90px;
   border-top-left-radius: 10px;
     border-top-right-radius: 10px;
        }
@@ -173,7 +177,7 @@ background-color:#0065fc;
     border-radius: 10px;
     margin:2px;
 }
-section{
+#section{
     display:flex;
     flex-wrap:wrap;
    }
@@ -191,8 +195,8 @@ section{
 #div_hebergement{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
-      width:70%;
+    justify-content: space-around;
+      width:65%;
       background-color: #f2f2f2;
       border-radius: 40px;
 }
@@ -211,11 +215,18 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
 }
+#aficher_plus{
+    display: flex;
+    flex_wrap: wrap;
+    width: 100%;
+    margin: 10px;
+}
 #div_populaire
 {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 15px;
     background-color: #f2f2f2;
     border-radius: 40px;
