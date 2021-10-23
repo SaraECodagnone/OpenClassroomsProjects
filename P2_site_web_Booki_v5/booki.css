@@ -1,0 +1,355 @@
+
+*{
+  font-family: 'raleway', serif sans-serif;
+}
+body{
+  width:auto;
+  display:flex;
+  flex-direction: column;
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+
+header{
+  display:flex;
+  flex-wrap: wrap;
+ margin:10px;
+  width:75%;
+  
+}
+p{
+  font-size: x-small;
+}
+/*mettre en gras les noms des hotels les plus populaires*/ 
+p em{
+  font-weight: bold ;
+}
+.titre_principal{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.logo_booki{
+  margin-left: 0px;
+  display: flex;
+ flex-wrap: wraps;
+ flex:3;
+}
+a{
+  text-decoration-line: none;  
+  color:black;
+ }
+.hover_filtres:hover{
+     box-shadow: 2px 2px 2px #F2F2F2;
+}
+ul{
+  list-style-type: none;
+}
+li a{
+  text-decoration-line: none;
+}
+/*navigation*/
+.div_nav{
+  margin-right: 2px;
+}
+nav ul{
+  display:flex;
+  margin-right: 10px;
+}
+nav li {
+   margin-right: 15px;
+}
+nav a{ 
+  padding-top: 12px;
+  color:black;
+}
+nav a:hover{ 
+      border-top: 1px solid #0065fc;
+      color:#0065fc;
+}
+/*Research*/
+.section_search{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.form-submit-bouton{
+background-color:#0065fc;
+}
+.filtres{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65%;
+  margin: 10px 10px 10px 10px;  
+}
+.titre_filtres{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 10px; 
+}
+.economique{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 10px; 
+}
+.familial{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 10px; 
+}
+.romantique{
+  display: flex;
+  flex-wrap: wrap;
+   margin: 10px 10px 10px 10px; 
+}
+.animaux_autorises{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 10px; 
+}
+.information{
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin:10px;
+  
+}
+.info{
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 10px;
+}
+.icone-info{ 
+  width:18px;
+  height: 18px;
+ /* background-color: #DEEBFF; */ 
+   border-radius:18px;
+  border:2px solid #F2F2F2;
+  padding:6px;
+  align-content: center;
+  text-align: center;
+}
+.photo_money, .photo_child, .photo_heart, .photo_dog {
+  width:18px;
+  height:18px;
+  background-color: #DEEBFF;  
+  border-radius:40px;
+  padding:6px;   
+}
+
+/* Hebergement*/
+.section_hebergement{
+  display:flex;
+  flex-wrap: wrap;
+}
+.div_hebergement{
+  display:flex;
+  flex-wrap: wrap;
+  width:70%;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+.hotel{
+  display:flex;
+  flex-wrap:wrap;
+  border-radius: 10px;
+  background-color: white;
+  margin:6px;}
+  
+  .hotel:hover{
+  box-shadow:3px 3px 3px #999696;
+}
+.stars {
+  display:flex;
+  flex-wrap: wrap;
+  }
+ 
+.photo_hotel_1 img{
+  width:240px;
+  height:180px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+} 
+.photo_hotel_2 iMG{
+  width:240px;
+  height:180px;
+   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+ 
+.photo_hotel_3 img{
+    width:240px;
+    height:180px;
+      border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+ 
+.photo_hotel_4 img{
+    width:240px;
+    height:180px;
+     border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+  }
+
+  
+  .photo_hotel_5 img{
+    width:240px;
+    height:180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  
+  .photo_hotel_6 img{
+    width:240px;
+    height:180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  /* Titre aficher plus*/
+  .aficher_plus{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 10px;
+}
+ 
+  /*Photos Les plus populaires*/
+  .div_populaire {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width:25%;
+    background-color: #F2F2F2;
+    margin:3px;
+    border-radius: 10px;
+      }
+ .pop{
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: white;
+    margin:10px;
+       }
+ .pop:hover{
+    box-shadow:3px 3px 3px #999696;
+ }
+  .photopop_1 img{
+    width:100px;
+    height:100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 3px;
+  }
+  
+  .photopop_2 img{
+    width:100px;
+    height:100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 3px;
+  }
+ 
+.photopop_3 img{
+    width:100px;
+    height:100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 3px;
+  }
+
+  /*Les activites à Marseille*/
+
+  #section_hebergement{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+  .div_activites{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+/*photo activite+ Description activite*/
+#section_activites{
+  display:flex;
+  flex-wrap: wrap;
+ 
+ }
+.activite{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.div_activites{
+  display:flex;
+  flex-wrap: wrap;
+   justify-content: space-around;
+   width:100%;
+   }
+   .activite{
+     border-radius: 10px;
+    background-color: white;
+    margin:10px;
+   
+   }
+   .activite:hover{
+    box-shadow:3px 3px 3px #f2f2f2;
+  }
+  .photo_activite_1 img{
+    width: 240px;
+    height: 280px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+     }
+  .photo_activite_2 img{
+    width: 240px;
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+     }
+  .photo_activite_3 img{
+        width: 240px;
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+         }
+  .photo_activite_4 img{
+    width: 240px;
+    height: 280px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+     }
+  .photo_activite_5 img{
+    width: 240px;
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+  .photo_activite_6 img{
+    width: 240px;
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+/*Footer*/
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+ background-color: #f2f2f2;
+ margin:2px;
+}
+footer a{ 
+     color:black;
+}
+footer ul{ 
+  text-align: left;
+}

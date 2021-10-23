@@ -118,6 +118,29 @@ background-color:#0065fc;
     flex-wrap:wrap;
     padding:10px ;
 }
+.div_hebergement{
+    display:flex;
+    flex-wrap:wrap;
+     width:60%;
+      background-color: #f2f2f2;
+      border-radius: 40px;
+}
+.column1{
+    display:flex;
+    flex-wrap: wrap;
+      flex-direction: column;
+}
+.column2{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.column3{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 #photo1, #photo2, #photo3, #photo4, #photo5,  #photo6, img{
     width:240px;
     height:80px;
@@ -162,133 +185,103 @@ background-color:#0065fc;
     border-bottom-left-radius: 20px;
 }
 .div_pop1, .div_pop2, .div_pop3 {
+     display: flex;
+    flex-wrap: wrap;
     background-color: white;
  /*   box-shadow: 2px 2px 2px rgb(185, 183, 183);*/
     border-radius: 10px;
      margin:12px;
     padding: 10px;
+   
    }
+.div_populaire
+   {
+       display:flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin-left: 10px;
+       background-color: #f2f2f2;
+       border-radius: 40px;
+       width: 20%;
+         }
+   
 /*les activites à Marseille*/
-
-.div_activite1, .div_activite2, .div_activite3, .div_activite4, .div_activite5, .div_activite6 {
-    background-color: white;
-     border-radius: 10px;
-     margin:12px;
-    padding: 10px;
+.section_activites{
+    display:flex;
+    flex-wrap:wrap;
+     
+       }
+.activite{
+    background-color:white;
+    box-shadow: 2px 2px 2px #f2f2f2;
+    border-radius: 10px;
+    margin:6px;
+    padding:10px;
    }
+   
+.div_activites{
+    display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  width:100%;
+      }
+.div_2_activites{
+           display:flex;
+          flex-direction: column;
+          flex-wrap:wrap;
+          justify-content: space-around;
+              }
+
  #photo_activite1 img{
-    width:240px;
-    height:240px;
-   /* border-radius:40px*/
+     /* border-radius:40px*/
    border-top-left-radius: 30px; 
      border-top-right-radius: 30px;
+    
 }
 #photo_activite4 img{
-    width:240px;
-    height:240px;
+   
    /* border-radius:40px*/
    border-top-left-radius: 30px; 
      border-top-right-radius: 30px;
+   
 }
 
 #photo_activite2 img{
-    width:240px;
-    height:80px;
+   
   border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+  
        }
   #photo_activite3 img{
-       width:240px;
-    height:80px;
+  
   border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-   
+    
        }
   #photo_activite5 img{
-        width:240px;
-     height:80px;
+      
    border-top-left-radius: 30px;
      border-top-right-radius: 30px;
+    
         }
         #photo_activite6 img{
-            width:240px;
-         height:80px;
+        
        border-top-left-radius: 30px;
          border-top-right-radius: 30px;
+     
             }
 .section{
     display:flex;
     flex-wrap:wrap;
    }
-  .section_activites{
-      display:flex;
-      flex-wrap:wrap;
-       margin:10px;
-     }
-.div_activites{
-      display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    width:100%;
-        }
- .div_2_activites{
-             display:flex;
-            flex-direction: column;
-            flex-wrap:wrap;
-            justify-content: space-around;
-                }
-.div_hebergement{
-    display:flex;
-    flex-wrap:wrap;
-    /*justify-content: space-between;*/
-      width:60%;
-      background-color: #f2f2f2;
-      border-radius: 40px;
-}
-.column1{
-    display:flex;
-    flex-wrap: wrap;
-      flex-direction: column;
-}
-.column2{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.column3{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+ 
 .aficher_plus{
     display: flex;
     flex-wrap: wrap;
     width: 60%;
     margin: 10px;
 }
-.div_populaire
-{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 10px;
-    background-color: #f2f2f2;
-    border-radius: 40px;
-    width: 20%;
-      }
- .div_pop1{
-    display: flex;
-    flex-wrap: wrap;
- } 
- .div_pop2{
-    display: flex;
-    flex-wrap: wrap;
- }
-.div_pop3{ 
-    display: flex;
-    flex-wrap: wrap;
-      }
 p{
     font-size: x-small;
 }
