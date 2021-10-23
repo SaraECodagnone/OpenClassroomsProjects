@@ -1,4 +1,6 @@
-body{
+*
+{
+  font-family: 'raleway', serif sans-serif;
 }
 body{
   width:auto;
@@ -120,15 +122,22 @@ background-color:#0065fc;
    justify-content: space-between;
    padding: 10px;
 }
-.icone-info{
-  margin:10px 10px 10px 10px;
+.icone-info{ 
+  width:18px;
+  height: 18px;
+ /* background-color: #DEEBFF; */ 
+   border-radius:18px;
+  border:2px solid #F2F2F2;
+  padding:6px;
+  align-content: center;
+  text-align: center;
 }
 .photo_money, .photo_child, .photo_heart, .photo_dog {
   width:18px;
   height:18px;
   background-color: #DEEBFF;  
   border-radius:40px;
-  padding:10px;   
+  padding:6px;   
 }
 
 /* Hebergement*/
