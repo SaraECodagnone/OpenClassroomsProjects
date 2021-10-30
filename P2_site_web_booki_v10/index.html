@@ -25,43 +25,44 @@
                       <h4>Trouvez votre hébergement pour des vacances de rêve</h4>
                      <p>En plain centre ville ou en plein nature</p>
                     </div> 
-                    <div class="search">
-                        <form method="post" action="traitement.php"> 
-                        <label for="search"></label>
-                        <i class="fa fa-map-marker-alt" style="color:#0065FC"></i>
-                        <input type="search" name="search" id="search" >
-                        <input type="submit" name="bouton" id="form-submit-bouton"value="Rechercher"/>
-                        </form>
-                     </div> 
+                    
+                        <form method="post" action="traitement.php">
+                           <div class="search">
+                       <!-- <label for="search"></label>-->
+                        <div class="icon_localisation"><i class="fa fa-map-marker-alt" style="color:black"></i></div>
+                       <div class="input_search"> <input type="search" name="search" id="input_search" value="         Marseille,France" style="border-top-left-radius:10px;border-bottom-left-radius: 10px;"></div>
+                      <div class="bouton_rechercher"> <input type="button" name="bouton" id="rechercher" value="Rechercher" style="background-color:#0065FC;border-top-right-radius:10px;border-bottom-right-radius: 10px" /></div>
+                        
+                     </div> </form>
                      <div class="filtres">
                         <div class="titre_filtres"><p><em>Filtres</em></p></div>
                      <a class="hover_filtres" href="#" >
                        <div class="economique">
-                         <div class="icone_money"><i class="fa fa-money-bill-wave" style="color:#0065FC" alt="Economique" > </i></div>
-                        <div> <p><em>Economique</em></p></div>
+                         <div class="icon_money"><i class="fa fa-money-bill-wave" style="color:#0065FC" alt="Economique" > </i></div>
+                        <div class="desc_icon_money"> <p><em>Economique  </em></p></div>
                     </div></a> 
                     <a class="hover_filtres" href="#">
                       <div class="familial">
-                        <div class="icone_child"><i class="fa fa-child" style="color:#0065FC" style="font-size:10px" alt="Familial"></i> </div>
-                        <div class="titre_familial"><p><em>Familial</em></p></div>
+                        <div class="icon_child"><i class="fa fa-child" style="color:#0065FC" style="font-size:10px" alt="Familial"></i> </div>
+                        <div class="desc_icon_child"><p><em> Familial   </em></p></div>
                        </div> 
                       </a>
                       <a class="hover_filtres"  href="#">
                       <div class="romantique">
-                         <div class="icone_heart"> <i class="fa fa-heart" style="color:#0065FC" alt="Romantique"></i> </div>
-                          <div class="titre_romantique"><P><em>Romantique</em></p></div> 
+                         <div class="icon_heart"> <i class="fa fa-heart" style="color:#0065FC" alt="Romantique"></i> </div>
+                          <div class="desc_icon_heart"><P><em>Romantique</em></p></div> 
                        </div>
                       </a>
                        <a class="hover_filtres" href="#">
                        <div class="animaux_autorises">
-                        <div class="icone_dog"><i class="fa fa-dog" style="color:#0065FC" alt="Animaux autorisés"></i> </div>
-                       <div class="titre_animaux_autorises"><p><em>Animaux autorisés</em></p></div> 
+                        <div class="icon_dog"><i class="fa fa-dog" style="color:#0065FC" alt="Animaux autorisés"></i> </div>
+                       <div class="desc_icon_dog"><p><em>Animaux autorisés</em></p></div> 
                       </div>
                     </a>
               </div>
              <a  class="hover_filtres" href="#" >
                  <div class="information">
-                      <div class="icone-info"><i class="fa fa-info"  alt="Info"></i> </div>
+                      <div class="icon-info"><i class="fa fa-info"  alt="Info"></i> </div>
                     <div class="bouton_info"><p><em> Plus de 500 logements sont disponibles dans centre ville</em></p></div>
                 </div></a>
               
@@ -83,7 +84,7 @@
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                      <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>
+                      <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                    </div></div>
                    </div>
                     </a>
@@ -98,8 +99,8 @@
                             <div><i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                             <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                             <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                            <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>
-                            <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div> 
+                            <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
+                            <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div> 
                           </div></div>
                     </div>
                    </a>
@@ -134,7 +135,7 @@
                         <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                         <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                         <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                        <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>
+                        <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                     </div>
                   </div> 
                     </div>
@@ -153,7 +154,7 @@
                           <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                           <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                           <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                          <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>    
+                          <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>    
                           </div>
                         </div>
                       </div>
@@ -219,7 +220,7 @@
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                       <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                      <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>
+                      <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                     </div>
                    </div>
                 </div>
@@ -235,7 +236,7 @@
                     <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                     <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                     <div> <i class="fa fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
-                    <div> <i class="fa fa-star" style="font-size:8px; color:#F2F2F2" alt="stars"></i></div>
+                    <div> <i class="far fa-star" style="font-size:8px; color:#0065FC" alt="stars"></i></div>
                   </div>
                  </div>
                 </div>
@@ -248,21 +249,21 @@
                      <header>   
                    <h2 class="titre_activites">Activités à Marseille</h2>
                   </header> 
-              <div class="div_activites_taille_ordinateur">
 
+              <div class="div_activites_taille_ordinateur">
                      <a  class="class_activite" href="#">
                         <div class="activite">
                          <div class="photo_activite_1"><img src="image/activite1.jpg"  alt="Vieux Port"  /> </div>   
                           <div> <p> Vieux Port</p></div>
                         </div> 
                   </a>
-               
-                 <div class="div_2_activites">
+                  <div class="div_2_activites">
                     <a  class="class_activite" href="#">
                       <div class="activite"> 
                          <div class="photo_activite_2"><img src="image/activite2.jpg"  alt="Fort de Pomègues"  /> </div>
                          <div> <p>Fort de Pomègues</p></div>      
-                     </div></a>
+                     </div>
+                    </a>
                      <a  class="class_activite" href="#">  
                      <div class="activite">
                         <div class="photo_activite_3"><img src="image/activite3.jpg"  alt="Îles des Frioult"  /> </div>
@@ -290,22 +291,21 @@
                        </div>
                        </a>
                    </div> 
-                    </div>  <!--Div Activites-->
+                    </div>  <!--Div Activites-taille_ordinateur-->
+                    <!--Div Activites-taille_tablet smartphone-->
                     <div class="div_activites_taille_tablet_smart">
-
                       <a  class="class_activite" href="#">
                          <div class="activite">
                           <div class="photo_activite_1"><img src="image/activite1.jpg"  alt="Vieux Port"  /> </div>   
                            <div> <p> Vieux Port</p></div>
                          </div> 
                    </a>
-                
-                  
                      <a  class="class_activite" href="#">
                        <div class="activite"> 
                           <div class="photo_activite_2"><img src="image/activite2.jpg"  alt="Fort de Pomègues"  /> </div>
                           <div> <p>Fort de Pomègues</p></div>      
-                      </div></a>
+                      </div>
+                    </a>
                       <a  class="class_activite" href="#">  
                       <div class="activite">
                          <div class="photo_activite_3"><img src="image/activite3.jpg"  alt="Îles des Frioult"  /> </div>
