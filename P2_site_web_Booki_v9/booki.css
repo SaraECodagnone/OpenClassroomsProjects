@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+
+/* Container for flexboxes */
+#section_hebergement {
+  
+  display: flex;
+}
+#section_activites {
+ 
+  display: flex;
+}

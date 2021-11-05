@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Flexbox Responsive</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="sara.css" media="screen">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  display: flex ;
+  justify-content: space-between;
+ }
+
+/* Container for flexboxes */
+#div_hebergement {
+  display: -webkit-flex;
+  display: flex;
+}
+#div_populaire {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 3px;
+
+ /* height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+.columnpop {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+ 
+ /* height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+
+#div_hebergement img{
+  width: 100%;
+  height: 198px;
+}
+ #div_activites{
+    display: -webkit-flex;
+  display: flex;
+    flex-wrap: wrap;
+  }
+ .activite1-4 img{
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  align-content: baseline;
+} 
+.activite2-3-5-6 img{
+  width: 100%;
+  height: 196px;
+  object-fit: cover;
+} 
+.columnact {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+
+ /* height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  #div_hebergement {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+   flex-wrap: wrap;
+ /* height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+.columnpop {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+   flex-wrap: wrap;
+ /* height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Template using Flexbox</h2>
+<p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 eand earlier versions.</p>
+<main>
+
+<section class="section_hebergement">
+
+  <h2>Hebergements à Marseille</h2>
+  <h2>Les plus populaires</h2>
+    
+<div id="div_hebergement">
+  <div class="column" style="background-color:#aaa;">Column Hebergement
+  <div class="hotel"><img src="image/photo1.jpg" ></div>
+   <div class="hotel"><img src="image/photo2.jpg" ></div>
+</div>
+  <div class="column" style="background-color:#bbb;">Column Populaire
+  <div class="hotel"><img src="image/photo3.jpg" ></div>
+  <div class="hotel"><img src="image/photo4.jpg" ></div>
+  </div>
+  <div class="column" style="background-color:#ccc;">Column Activitès
+    <div class="hotel"><img src="image/photo5.jpg" ></div>
+     <div class="hotel"><img src="image/photo6.jpg" ></div>
+  </div>
+    <div class="columnpop" style="background-color:#aaa;">Les plus populaires
+    <div class="populaire"><img src="image/photopop1.jpg" ></div>
+    <div class="populaire"><img src="image/photopop2.jpg" ></div>
+    <div class="populaire"><img src="image/photopop3.jpg" ></div>
+  </div>
+  </div>
+ </section>
+<section class="section_activites">
+
+  <h2>Activités à Marseille</h2>
+  <div id="div_activites">
+<div class="columnact" style="background-color:#aaa;">
+      <div class="activite1-4"><img src="image/activite1.jpg" ></div>
+    </div>
+    <div class="columnact" style="background-color:#aaa;">
+    <div class="activite2-3-5-6"><img src="image/activite2.jpg" ></div>
+    <div class="activite2-3-5-6"><img src="image/activite3.jpg" ></div>
+  </div>
+  <div class="columnact" style="background-color:#aaa;">
+    <div class="activite1-4"><img src="image/activite4.jpg" ></div>
+  </div>
+    <div class="columnact" style="background-color:#aaa;">
+    <div class="activite2-3-5-6"><img src="image/activite5.jpg" ></div>
+    <div class="activite2-3-5-6"><img src="image/activite6.jpg" ></div>
+  </div>
+  </div>
+</section>
+</main>
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+

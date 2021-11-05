@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  width: auto;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+.titre_principal{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-between;
+}
+.logo_booki{
+margin-left: 0px;
+display: flex;
+flex-wrap: wraps;
+flex:3;
+}
+a{
+text-decoration-line: none;  
+color:black;
+}
+
+ul{
+list-style-type: none;
+}
+li a{
+text-decoration-line: none;
+}
+/*navigation*/
+.div_nav{
+margin-right: 2px;
+}
+nav ul{
+display:flex;
+margin-right: 10px;
+}
+nav li {
+margin-right: 15px;
+}
+nav a{ 
+padding-top: 12px;
+color:black;
+}
+nav a:hover{ 
+border-top: 1px solid #0065fc;
+color:#0065fc;
+}
+/*Research*/
+.section_search{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.form-submit-bouton{
+background-color:#0065fc;
+}
+.hover_filtres:hover{
+    box-shadow: 2px 2px 2px #F2F2F2;
+  }
+
+header {
+  
+  padding: 15px;
+}
+.icon_eco{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    position:relative;
+    z_index: 2;
+background-color: #DEEBFF;
+}
+.desc_icon_eco {
+  width: 140px;
+  height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+     text-align: center;
+ position: absolute;
+ z-index: 1;
+  font-size: 12px;
+  }
+.icon_dog{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    font-size: 14px;
+     position: relative;
+    z_index: 2;
+    text-align: center;
+    background-color: #DEEBFF;
+}
+.desc_icon_dog {
+  width: 160px;
+  height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+     text-align: center;
+  position:absolute;
+ z-index: 1;
+  font-size: 12px;
+  }
+  
+.icon_familial{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F2F2F2;
+    border-radius: 10px;
+     position: relative;
+    z_index: 2;
+    text-align: center;
+background-color: #DEEBFF;
+}
+  .desc_icon_familial {
+    width: 100px;
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+ z-index: 1;
+ font-size: 12px;
+  }
+  .icon_romantique{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F2F2F2;
+    border-radius: 10px;
+     position: relative;
+    z_index: 2;
+    text-align: center;
+    background-color: #DEEBFF;
+}
+  .desc_icon_romantique {
+    width: 120px;
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    text-align: center;
+     position: absolute;
+ z-index: 1;
+ font-size: 12px;
+  }
+ 
+ .animaux_autorises{
+  display: flex;
+   }
+ .economique {
+  display: flex;
+ 
+
+ }
+ .familial{
+  display: flex;
+
+ }
+ .romantique{
+  display: flex;
+  
+
+ }
+.div_icon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+.hebergement img{
+  width: 100%;
+  height: 140px;
+  border-radius: 40px;
+  margin: 10px 10px 10px;
+
+ }
+ .populaire img{
+  width: 100%;
+  height: 140px;
+   border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 10px;
+ }
+ .col_5 img{
+  width: 100%;
+  height: 380px;
+   border-top-left-radius: 40px;
+    border-top-right-radius:  40px;
+    padding: 10px;
+ }
+ .col_7 img{
+  width: 100%;
+  height: 380px;
+   border-top-left-radius: 40px;
+    border-top-right-radius:  40px;
+    padding: 10px;
+ }
+.col_6 img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+    border-top-right-radius:  40px;
+    align-items: baseline;
+ }
+ .col_8 img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+    border-top-right-radius:  40px;
+ }
+ footer{
+  text-align: center;
+ }
+  
+
+/* Hebergement + Populaires */
+.col_1 {width: 26%;}
+.col_2 {width: 26%;}
+.col_3 {width: 26%;}
+.col_4 {width: 20%;}
+/*Activites*/
+
+.col_5 {width: 25%;}
+.col_6 {width: 25%;}
+.col_7 {width: 25%;}
+.col_8 {width: 25%;}
+
+#section_hebergement{
+  display: flex;
+  width: 100%;
+ 
+}
+.hebergement_plus_titres{
+  background-color: #F2F2F2;
+  border-radius: 40px;
+  margin: 10px;
+  font-size: 10px;
+}
+.hebergement{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   width: 100%; 
+     }
+.populaires_plus_chart{
+  display: flex;
+  background-color: #F2F2F2;
+    margin: 10px;
+  font-size: 10px;
+  justify-content:space-around ;
+}
+ .populaire{
+  display: flex;
+  background-color: #F2F2F2;
+  flex-direction: column;
+  border-radius: 40px;
+ }
+ #section_activites{
+  display: flex;
+  
+ 
+}
+.activites{
+  display: flex;
+ }
+ .col_6 {
+  display: flex;
+  flex-direction: column;
+ }
+ .col_8 {
+  display: flex;
+  flex-direction: column;
+ }
+ 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col_"] {
+    width: 100%;
+  }
+}
