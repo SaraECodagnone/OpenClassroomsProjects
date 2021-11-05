@@ -3,7 +3,7 @@
 -moz-box-sizing: border-box; /* Firefox, autres Gecko */
 -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 font-family: 'raleway', serif sans-serif;
-margin:0;
+
 }
 /* ordinateur Taille >992px*/
 @media screen  and (min-width:992px) 
@@ -15,6 +15,14 @@ display:flex;
 flex-direction: column;
 flex-wrap: wrap;
 } 
+header{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:10px;
+    width:100%;
+    justify-content: space-between;
+    font-size:11px;
+    }
 .div_hebergement{
 display:flex;
 flex-wrap: wrap;
@@ -208,14 +216,7 @@ align-items: flex-end;
 {
 display:none;
 }
-header{
-    display:flex;
-    flex-wrap: wrap;
-    margin-left:10px;
-    width:100%;
-    justify-content: space-between;
-    font-size:11px;
-    }
+
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * /
  /*Taille ordinateur width=992px ordinateur */
@@ -436,13 +437,13 @@ margin: 10px;
 .pop:hover{
 box-shadow:3px 3px 3px #999696;
 }
-/*Icône Chart Line*/
-.icon_chart_line{
+/*Div_chart_line =titre Les plus populaires + Icône Chart Line*/
+.div_chart_line{
 display:flex;
 flex-wrap: wrap;
-justify-content: space-between; 
-margin-left: 75px;
-margin-top: 20px;
+margin-right: 23px;
+margin-top: 6px;
+padding:3px;
 }
 /*Les activites à Marseille*/
 #section_activites{
