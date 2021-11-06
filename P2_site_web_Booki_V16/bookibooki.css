@@ -211,6 +211,10 @@ opacity:0.6;
 		box-shadow:3px 3px 3px #999696;
 		opacity:0.6;
 		}
+		.card_1_activite:hover{
+			box-shadow:3px 3px 3px #999696;
+			opacity:0.6;
+			}		
 .stars {
 display:flex;
 flex-wrap: wrap;
@@ -298,7 +302,7 @@ width: 70%;
 	display:flex;
 	flex-wrap: wrap;
     flex-direction: column;
-	font-size: 6px;
+	font-size: 10px;
 	
 }
 .titres_populaires{
@@ -333,7 +337,7 @@ width: 70%;
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		font-size: 6px;
+		font-size: 10px;
 		}
 		
 
@@ -356,7 +360,7 @@ width: 70%;
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		font-size: 6px;
+		font-size: 10px;
 	 
 	}
 
@@ -370,7 +374,7 @@ width: 70%;
 		border-radius: 10px;
 		flex:1.4;
 	}	
-	.card_1_activites{
+	.card_1_activite{
 		display:none;
 	}
 /*Footer*/
@@ -426,7 +430,7 @@ footer{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		font-size: 6px;
+		font-size: 10px;
 		
 	}
 		.populaire{
@@ -460,7 +464,7 @@ footer{
 	display:flex;
 	flex-wrap: wrap;
     flex-direction: column;
-	font-size: 6px;
+	font-size: 10px;
 	}
 	
 
@@ -484,14 +488,14 @@ footer{
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	font-size: 6px;
+	font-size: 10px;
  
 }
 
 .card_2_activites{
 	display:none;
 }
-.card_1_activites{
+.card_1_activite{
 	display: flex;
 	flex-wrap: wrap;
    flex-direction: column;
@@ -556,7 +560,7 @@ footer{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		font-size: 6px;
+		font-size: 10px;
 		
 	}
 	.titres_populaires{
@@ -592,7 +596,7 @@ footer{
 	display:flex;
 	flex-wrap: wrap;
     flex-direction: column;
-	font-size: 6px;
+	font-size:10px;
 	}
 	
 
@@ -618,10 +622,10 @@ footer{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		font-size: 6px;
+		font-size: 10px;
 	 
 	}
-	.card_1_activites{
+	.card_1_activite{
 		display: flex;
 		flex-wrap: wrap;
 	   flex-direction: column;
