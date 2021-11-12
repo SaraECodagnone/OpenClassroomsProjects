@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr"> 
     <head>
      <meta charset="utf-8" />
      <link rel="stylesheet" href="font_awesome_free_web/css/all.css"/>
     <!--<link rel="stylesheet" href="normalize.css"   /> -->  
       <link rel="stylesheet" href="booki.css" media="screen"/>
-
-           <meta name="viewport" content="width=device-width" initial-scale="1.0" user-scalable="no" />
-          <title>Booki V18 Flex Box</title>
+      <meta name="viewport" content="width=device-width" initial-scale="1.0" user-scalable="no" />
+      <title>Booki V19 Flex Box</title>
     </head>
     <body> 
-    <header>
-        <div class="titre_principal"> 
-              <div id="logo_booki"><img src="booki.png" alt="logo_booki" />  </div>              
-              <nav>
-                  <ul>
-                     <li> <a href="#hebergement">Hébergements</a></li>
-                       <li><a href="#activites">Activités</a></li>
-                  </ul>
-                </nav>
-             </div>
-     </header>
-     <main>
-        <section id="section_search">
+<header>
+    <div class="titre_principal"> 
+    <div id="logo_booki"><img src="booki.png" alt="logo_booki" />  </div>              
+    <nav>
+    <ul>
+    <li> <a href="#hebergement">Hébergements</a></li>
+    <li><a href="#activites">Activités</a></li>
+    </ul>
+    </nav>
+    </div>
+ </header>
+<main>
+<section id="section_search">
            <div>
                 <h4>Trouvez votre hébergement pour des vacances de rêve</h4>
                <p>En plain centre ville ou en plein nature</p>
                </div>
-                  
                <form action="recherchre.php" method="post">
                    <div class="formulaire">
             <div class="class_search"><input type="search" name="search" class="search_localisation" value="    Marseille, France"></div>
@@ -66,16 +64,16 @@
                 <div class="icon-info"><i class="fa fa-info"  alt="Info"></i> </div>
               <div class="bouton_info"><p><em> Plus de 500 logements sont disponibles dans centre ville</em></p></div>
           </div></a>
-        
-   
-     </section>
-     
-        <section id="hebergement">
- <div class="class_hebergement">
+</section>
+<!--S e c t i o n    H e b e r g e m e n t -->     
+<section id="hebergement_populaire">
+    <!--Hebergement + Populaires-->
+ <div class="hebergement">
      <header class="titres_hebergement">
          <h1>Hebergement à Marseille</h1>
      </header>
-<div class="hebergement_1" >
+<div class="card_hebergement" >
+    <div class="column_1_hebergement">
     <div class="card">
     <a href="#">
         <div class="photo"><img src="resized_images/photo1.jpg" alt="Auberge La Cannebiére" /> </div>
@@ -116,6 +114,8 @@
     </div>
     </a>
     </div>
+    </div><!--fin column 1 hebergement-->
+    <div class="column_2_hebergement">
     <div class="card">
     <a href="#">
      <div class="photo"><img src="resized_images/photo3.jpg" alt="Hotel de la Mer" /> </div>
@@ -134,9 +134,6 @@
     </div>
     </a>
 </div>
-
-   </div><!--fin class hebergement_1-->
-   <div class="hebergement_2">
         <div class="card">
             <a href="#">
         <div class="photo"><img src="resized_images/photo4.jpg"  alt="Auberge La Cannebiére" /> </div>
@@ -157,6 +154,8 @@
     </div>
 </a>
     </div>
+    </div><!--Fin column 2 hebergement-->
+    <div class="column_3_hebergement">
      <div class="card">
          <a href="#">
         <div class="photo"><img src="resized_images/photo5.jpg"  alt="Hotel de la Mer" /> </div>
@@ -196,12 +195,12 @@
     </div>
 </a>
 </div>
-    </div><!--fin hebergement_2-->
-
-       <!--Texte :Aficher plus -->
+</div><!--fin column 3 hebergement-->
+</div><!--card hebergement-->
+<!--Texte :Aficher plus -->
        <div class="aficher_plus"> <p><em>Aficher Plus</em></p></div>
 
-</div><!--fin class_hebergement-->
+</div><!--fin hebergement-->
 
 <div class="populaire">
     
@@ -212,7 +211,7 @@
          </div>
        </header>
        
-       <div class="card_les_plus_populaire">
+       <div class="card_les_plus_populaires">
        <div class="card_pop">
          <a href="#">
         <div class="photo_pop"><img src="resized_images/photopop1.jpg"  alt="Hotel de la Mer" /> </div>
@@ -231,7 +230,6 @@
 </div>
 <div class="card_pop">
         <a href="#">
-   
         <div class="photo_pop"><img src="resized_images/photopop2.jpg"  alt="Hotel de la Mer" /> </div>
          <div class="description_pop">
         <P>Au coeur de l'eau</P>
@@ -249,12 +247,10 @@
             </div>  
         </div>
     </div>
-   
 </a>
 </div>
 <div class="card_pop">
         <a href="#">
-           
         <div class="photo_pop"><img src="resized_images/photopop3.jpg"  alt="Hotel de la Mer" /> </div>
          <div class="description_pop">
         <P>Hotel Tout Bleu et Blanc</P>
@@ -271,7 +267,6 @@
             </div>
         </div>
     </div>
-
 </a>
 </div>
 </div><!--Fin card les plus populaires-->
@@ -281,66 +276,63 @@
     <header class="titres_activites">
       <h1>Activités à Marseille</h1>
     </header>
-    <div class="activites">
-        <!--Taille ordinateur columns  1 et 3 avec un photo; columns 2 et 3 avec 2 photos -->
-        <div class="photo_activite_taille_ordinateur">
-        <div class="card1">
+    <div class="card_activites">
+        <div class="card_1_activite">
+        <div class="card_1">
              <div class="photo_activite"><img src="resized_images/activite1.jpg" alt="activite2"></div>
            <div class="description">Le Vieux Port</div>
         </div>
-        <div class="card_2_activites">
-       <div class="card2">
+        </div>
+        <div class="card_1_2_activites"><!--Card 2 activites taille ordinateur-->
+       <div class="card_2">
             <div class="photo_activite"><img src="resized_images/activite2_2.jpg" alt="Activite2"  ></div>                
             <div class="description">Fort des Pomègues</div>
       </div>
-        <div class="card3">
+        <div class="card_2">
             <div class="photo_activite"><img src="resized_images/activite2_3.jpg" alt="Activite6"  ></div>     
              <div class="description">Îles du Frioul</div>
      </div>
-    </div><!--fin card 2 activites-->
-        <div class="card4">
+    </div><!--Fin card 2 activites-->
+    <div class="card_1_1_activite"><!--Card 1 activite-->
+        <div class="card_1">
+             <div class="photo_activite"><img src="resized_images/activite2.jpg" alt="Activite2"  ></div>                
+             <div class="description">Fort des Pomègues</div>
+       </div>
+    </div><!--Fin card 1 activite-->
+        <div class="card_1_1_activite">
+        <div class="card_1">
+             <div class="photo_activite"><img src="resized_images/activite3.jpg" alt="Activite2"  ></div>                
+             <div class="description">Fort des Pomègues</div>
+       </div>
+      </div><!--Fin card 1 activite-->
+      <div class="card_1_activite">
+        <div class="card_1">
          <div class="photo_activite"><img src="resized_images/activite4.jpg" alt="activite4"></div>
          <div class="description">Parc National des Calanques</div>
      </div>
-     <div class="card_2_activites">
-        <div class="card5">
+     </div><!--fin card 1 activite-->
+     <div class="card_1_2_activites"><!-- 2 activites-->
+        <div class="card_2">
         <div class="photo_activite"><img src="resized_images/activite2_5.jpg" alt="Activite5"  ></div>
          <div class="description">Notre Dame de la Garde</div>
      </div>
-        <div class="card6">
+        <div class="card_2">
         <div class="photo_activite"><img src="resized_images/activite2_6.jpg" alt="Activite6"  ></div>
         <div class="description">Parc Longchamp</div>
      </div>
-     </div><!--fin card 2 activites-->
-    </div><!--Fin activites taille ordinateur-->
-    <!--Taille tablet et smartphone ,Card 1 activite display flex-->
-     <div class="photo_activite_taille_tablet_smartphone">
-        <div class="card1">
-             <div class="photo_activite"><img src="resized_images/activite1.jpg" alt="activite2"></div>
-           <div class="description_activite"><h1> Vieux Port</h1></div>
-        </div>
-             <div class="card2">
-            <div class="photo_activite"><img src="resized_images/activite2.jpg" alt="Activite2"  ></div>                
-            <div class="description_activite"><h1>Fort des Pomègues</h1></div>
+     </div><!--fin card 2 activite-->
+     <div class="card_1_1_activite"><!--Card 1 activite taille tablet smartphone-->
+        <div class="card_1">
+             <div class="photo_activite"><img src="resized_images/activite5.jpg" alt="Activite5"  ></div>                
+             <div class="description">Fort des Pomègues</div>
+       </div>
+       </div>
+       <div class="card_1_1_activite"><!--Card 1 activite taille tablet smartphone-->
+         <div class="card_1">
+             <div class="photo_activite"><img src="resized_images/activite6.jpg" alt="Activite6"  ></div>     
+              <div class="description">Îles du Frioul</div>
       </div>
-        <div class="card3">
-            <div class="photo_activite"><img src="resized_images/activite3.jpg" alt="Activite6"  ></div>     
-             <div class="description_activite"><h1>Îles du Friou</h1></div>
-     </div>
-           <div class="card4">
-         <div class="photo_activite"><img src="resized_images/activite4.jpg" alt="activite4"></div>
-         <div class="description_activite"><h1>Parc National des Calanques</h1></div>
-     </div>
-           <div class="card5">
-        <div class="photo_activite"><img src="resized_images/activite5.jpg" alt="Activite5"  ></div>
-         <div class="description_activite"><h1> Dame de la Garde</h1></div>
-     </div>
-        <div class="card6">
-        <div class="photo_activite"><img src="resized_images/activite6.jpg" alt="Activite6"  ></div>
-        <div class="description_activite"><h1> Longchamp</h1></div>
-        </div>
-     </div><!--Fin activites taille tablet et smartphone-->
-    
+     </div><!--Fin card 1 activite-->
      </div><!--fin class_activites-->
  </section>
 </main>
