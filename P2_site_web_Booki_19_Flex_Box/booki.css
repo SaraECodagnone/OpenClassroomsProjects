@@ -2,7 +2,7 @@
 	box-sizing: border-box; /* Opera/IE 8+ */
 	   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-   font-family: 'raleway', serif sans-serif;
+   font-family: "raleway", "serif sans-serif";
    }
 p{
 	overflow: auto;
@@ -72,10 +72,11 @@ color:#0065fc;
 	display: flex;
 	margin:10px;
 }
-.search_localisation{
+.search{
 border-radius: 40px;
 position:absolute;
 z-index: 1;
+text-align: center;
 }
 .icon_localisation{
 	width:18px;
@@ -85,7 +86,7 @@ z-index: 1;
 	border-bottom-left-radius: 10px;
 	position:relative;
 	z-index: 2;
-	left:2px;
+	left:3px;
 	top:1.4px;
 	padding:1px 1px 4px 2px;
 }
@@ -210,14 +211,16 @@ opacity:0.6;
 	box-shadow:3px 3px 3px #999696;
 	opacity:0.6;
 	}
-	.card_activites:hover{
-		box-shadow:3px 3px 3px #999696;
-		opacity:0.6;
-		}
-		.card_1_activite:hover{
+	
+		/*hover activites= card_1 card_2*/
+.card_1:hover{
 			box-shadow:3px 3px 3px #999696;
 			opacity:0.6;
-			}		
+			}	
+.card_2:hover{
+		box-shadow:3px 3px 3px #999696;
+		opacity:0.6;
+		}	
 .stars {
 display:flex;
 flex-wrap: wrap;
@@ -251,6 +254,18 @@ box-shadow:3px 3px 3px #999696;
 	flex-wrap: wrap;
 	
 }
+.card{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: white;
+	padding: 6px;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		margin:10px;
+		font-size: 10px;
+		
+}
 
 .card_1{
 	display:flex;
@@ -260,7 +275,7 @@ box-shadow:3px 3px 3px #999696;
 	box-shadow: 3px 3px 3px 3px #F2F2F2;
    align-items: center;
  margin:10px;
-
+font-size: 10px;
 
 }
 .card_2{
@@ -271,10 +286,16 @@ box-shadow:3px 3px 3px #999696;
 	box-shadow: 3px 3px 3px 3px #F2F2F2;
 	align-items: center;
 	 margin:10px;
+	font-size: 10px; 
+
+}
+.titres_populaires{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-
-@media screen and (max-width:2500px)  and (min-width:992px)
+@media all and (min-width:992px) and  (max-width:2500px) 
 {
 
 .hebergement{
@@ -284,7 +305,7 @@ background-color: #F2F2F2;
 border-radius: 10px;
 padding: 4px;
 flex-direction: column;
-width: 70%;
+width: 65%;
 
 }
 .card_hebergement{
@@ -319,16 +340,17 @@ flex:1.4;
 	flex-direction: column;
 	background-color: white;
 	padding: 6px;
-	margin: 6px;
-	border-top-right-radius: 10px;
+		border-top-right-radius: 10px;
 		border-top-left-radius: 10px;
 		margin:10px;
+		
 }
 .description{
 	display:flex;
 	flex-wrap: wrap;
     flex-direction: column;
 	font-size: 10px;
+
 }
 .titres_populaires{
 	display:flex;
@@ -345,12 +367,14 @@ flex:1.4;
 		border-radius: 10px;
 		padding: 4px;
 		margin: 3px;
-		width:17%;
+		width:25%;
 	}
 	.card_les_plus_populaires{
 		display:flex;
 		flex-wrap: wrap;
+		align-items: flex-end;
 	
+      
 			}
 	.card_pop{
 		display: flex;
@@ -358,21 +382,33 @@ flex:1.4;
 		flex-direction: row;
 		background-color: white;
 		padding: 2px;
-		margin: 2px;
+		margin: 22px;
 		border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
+
 			}
+
+	.photo_pop {
+	
+border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	flex: 1.6;
+}
+
 	.description_pop{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
 		font-size: 10px;
+		width: 110px;
+		margin: 3px;
 		}
 	
 	    
 		.activites{
 			display:flex;
 			flex-wrap: wrap;
+			font-size: 10px;
 		  	}
 	.card_activites{
 		display: flex;
@@ -413,7 +449,7 @@ footer{
 	}
 		
 		}
-	@media screen and  (max-width:991px) and (min-width:768px) {
+	@media all  and  (min-width:767px) and (max-width:991px) {
 		
 .hebergement{
 	display:flex;
@@ -431,6 +467,15 @@ width:100%;
 border-radius: 10px;
 padding: 4px;
 }
+.description{
+			display:flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			font-size: 10px;
+			padding: 2px;
+			margin: 10px;
+			text-align: center;
+			}
 .column_1_hebergement{
 display: flex;
 flex-wrap: wrap;
@@ -462,6 +507,7 @@ flex:1.4;
 	display:flex;
 	flex-wrap: wrap;
 	width:100%;
+	
 }
 			.card_pop{
 				display: flex;
@@ -473,6 +519,7 @@ flex:1.4;
 				border-top-left-radius: 10px;
 			border-bottom-left-radius: 10px;
 		flex:1.3;
+		
 					}
 			.description_pop{
 				display:flex;
@@ -481,6 +528,7 @@ flex:1.4;
 				font-size: 10px;
 				padding: 2px;
 				margin: 10px;
+				width: 110px;
 				flex:1.3;
 
 				}
@@ -489,8 +537,8 @@ flex:1.4;
 		display:flex;
 		background-color:#F2F2F2;
 		padding:20px;
-		gap:16px;
 		justify-items: center;
+		font-size: 10px;
 	   
 	}
 	.card_activites{
@@ -534,11 +582,10 @@ footer{
 	text-align: left;
 	}
 	}
-	@media screen and (max-width:767px) {
-		.card_les_plus_populaires{
-			display:flex;
-			flex-wrap: wrap;
-		}
+	@media all and (max-width:767px) {
+
+
+		
 		.populaire{
 			display: flex;
 			flex-wrap: wrap;
@@ -547,7 +594,11 @@ footer{
 			border-radius: 10px;
 			padding: 20px;
 			margin: 10px;
-			
+			order: 1;
+		}
+		.card_les_plus_populaires{
+			display:flex;
+			flex-wrap: wrap;
 		}
 		.card_pop{
 			display: flex;
@@ -566,10 +617,54 @@ footer{
 			font-size: 10px;
 			padding: 2px;
 			margin: 10px;
+			width: 110px;
 			}
+.hebergement{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #F2F2F2;
+border-radius: 10px;
+padding: 4px;
+order: 2;
+}
+.card_hebergement{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #F2F2F2;
+border-radius: 10px;
+padding: 4px;
+margin: 10px;
+}
+
+.column_1_hebergement{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+
+}
+.column_2_hebergement{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+
+}
+.column_3_hebergement{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+
+}
+
+
+	
 	.activites{
-		display:display;
+		display:flex;
 		background-color: #F2F2F2;
+		order: 3;
+		margin: 10px;
+		padding: 4px;
 		}
 		.card_1_activite{
 			display:flex;
@@ -583,15 +678,7 @@ footer{
 					flex-wrap: wrap;
 			flex-direction: column;
 				}
-		.description_activite{
-			display:flex;
-			flex-wrap: wrap;
-			flex-direction: column;
-			font-size: 10px;
-			padding: 2px;
-			margin: 10px;
-			text-align: center;
-			}
+		
 	
 	
 
